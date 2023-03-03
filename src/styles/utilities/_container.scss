@@ -1,0 +1,13 @@
+@import "./../_var";
+
+.container {
+    max-width: $lg;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: $md) and (max-width: $lg - 1) {
+    .container {
+        max-width: $md;
+    }
+}

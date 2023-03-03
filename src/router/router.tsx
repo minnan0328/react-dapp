@@ -2,11 +2,9 @@
 import { useRoutes } from 'react-router-dom';
 import url from "../router/url";
 import Home from "./../pages/home/home";
-import Ethers from "./../pages/ethers/ethers";
 
 const routes = [
-    { ...url.home, element: <Home /> },
-    { ...url.ethers, element: <Ethers /> }
+    { ...url.home, element: <Home /> }
 ];
 
 const RouterElement = () => {
@@ -16,10 +14,4 @@ const RouterElement = () => {
     return element;
 };
 
-const setRouter = () => {
-    return (
-        <RouterElement />
-    )
-};
-
-export default setRouter;
+export default RouterElement;

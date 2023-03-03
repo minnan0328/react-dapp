@@ -1,21 +1,38 @@
+import "./header.scss";
+// import React, { useState } from "react";
 import logo from './../../../assets/images/logo.svg';
-import url from './../../../router/url';
 import { Link } from 'react-router-dom';
-
-
+import url from './../../../router/url';
 
 const Header = () => {
-    return (
-        <div className="menus">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-            </header>
 
-            <div className="menu">
-                <Link to={ url.home.path } relative="path">{ url.home.name }</Link>
-                <Link to={ url.ethers.path } relative="path">{ url.ethers.name }</Link>
+    // const menus = [ url.ethers ];
+    // const [currentMenu, setCurrentMenu] = useState(menus[0].name);
+
+    // const getMenu = (menu: any) => setCurrentMenu(menu.name);
+
+    return (
+        <header className="header">
+            <div className="header-left">
+                <Link to={url.home.path}>
+                    <img src={logo} className="logo" alt="logo" />
+                </Link>
+
+                <h1>Ethers</h1>
             </div>
-        </div>
+
+            {/* <div className="menus">
+                { 
+                    menus.map(menu => 
+                        <Link  className={`menu ${ currentMenu ===  menu.name ? "active": "" }`}
+                            key={ menu.name } to={ menu.path }
+                            onClick={(e) => getMenu({ menu })}>
+                            {menu.name}
+                        </Link>
+                    ) 
+                }
+            </div> */}
+        </header>
     )
 };
 

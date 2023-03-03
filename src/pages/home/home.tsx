@@ -1,11 +1,14 @@
 import './home.scss';
+import Ethers from './../ethers/ethers'
 
 const Home = () => {
-    return <>
+    return (
         <div className="home">
-            <h1>home</h1>
+            <div className="container">
+                <Ethers />
+            </div>
         </div>
-    </>
+    )
 };
 
 export default Home;
