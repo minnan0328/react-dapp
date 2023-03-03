@@ -1,6 +1,6 @@
-import React from "react";
 import logo from './../assets/images/logo.svg';
 import "./App.scss";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './home/home';
 import Ethers from './ethers/ethers';
 
@@ -11,8 +11,12 @@ const App = () => {
 				<img src={logo} className="App-logo" alt="logo" />
 			</header>
 
-			<Home />
-			<Ethers />
+            <Router>
+                <Routes>
+                    <Route element={<Home />} path={'/'}></Route>
+                    <Route element={<Ethers />} path='/ethers'></Route>
+                </Routes>
+            </Router>
 		</div>
 	);
 }
