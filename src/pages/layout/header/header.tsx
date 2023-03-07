@@ -1,8 +1,8 @@
 import "./header.scss";
 // import React, { useState } from "react";
-import logo from './../../../assets/images/logo.svg';
+import logo from '@/assets/images/logo.svg';
 import { Link } from 'react-router-dom';
-import url from './../../../router/url';
+import url from '@/router/url';
 
 const Header = () => {
 

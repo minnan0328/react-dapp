@@ -2,7 +2,7 @@ import "./ethers.scss";
 import { useEffect, useState } from "react";
 import Web3Modal from "web3modal";
 import { ethers } from "ethers";
-import contractConfig from "../../config/contract";
+import contractConfig from "@/config/contract";
 
 const web3Modal = new Web3Modal({
 	network: "goerli",

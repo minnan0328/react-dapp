@@ -1,7 +1,7 @@
 
 import { useRoutes } from 'react-router-dom';
-import url from "../router/url";
-import Home from "./../pages/home/home";
+import url from "@/router/url";
+import Home from "@/pages/home/home";
 
 const routes = [
     { ...url.home, element: <Home /> }

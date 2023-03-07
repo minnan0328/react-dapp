@@ -1,5 +1,5 @@
 import './home.scss';
-import Ethers from './../ethers/ethers'
+import Ethers from '@/pages/ethers/ethers'
 
 const Home = () => {
     return (

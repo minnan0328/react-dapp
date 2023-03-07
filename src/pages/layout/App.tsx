@@ -1,6 +1,6 @@
 import "./App.scss";
 import Header from './header/header';
-import RouterElement from './../../router/router';
+import RouterElement from '@/router/router';
 
 const App = () => {
 	return (
